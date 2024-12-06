@@ -24,6 +24,10 @@ export const createTodoItem = (todoContent) => {
 
 }
 
-export const deleteTodoItem = () => {
-  
+export const deleteTodoItem = (e) => {
+  const item = e.target;
+  if(item.classList[1] === 'fa-xmark') {
+    const todo = item.parentElement;
+    todo.remove();
+  }
 }

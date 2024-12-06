@@ -1,4 +1,4 @@
-import { createTodoItem } from './taskManager.js';
+import { createTodoItem, deleteTodoItem } from './taskManager.js';
 
 let todos = [];
 
@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+todosContainer.addEventListener('click', deleteTodoItem);
 
 
 
