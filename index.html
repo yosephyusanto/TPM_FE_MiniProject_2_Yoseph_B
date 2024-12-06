@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="root">
+    <div class="container">
+      <header>
+        <h1>Todo Application</h1>
+        <p class="greet-text">Hi there, welcome back, its time to complete your tasks</p>
+      </header>
+
+      <div class="inp-container">
+        <input type="text" placeholder="Enter your task here" id="todo-inp" required>
+        <button id="todo-add-btn"><i class="fa-solid fa-plus"></i></button>
+      </div>
+
+      <ul class="todos-container">
+
+        <li class="todo-item">
+          <div class="flex"> 
+            <input type="checkbox" class="checkbox">
+            <p>todo content</p>
+          </div>
+          <i class="fa-solid fa-xmark"></i>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/66b3524846.js" crossorigin="anonymous"></script>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="taskManager.js"></script>
+</body>
+</html>

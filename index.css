@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --accent-color: #5016FF;
+  --base-color: #000000;
+  --secondary-color: #7B7B7B;
+  --light-color: #DEDEDE;
+  --background-color: #EEEEF0;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Inter', sans-serif;
+}
+
+#root{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.container{
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction:   column;
+  row-gap: 20px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+header h1{
+  font-size: 32px;
+}
+
+.greet-text{
+  font-size: 14px;
+  color: var(--secondary-color);
+  line-height: 200%;
+}
+
+
+#todo-inp{
+  padding: 15px 10px;
+  border: 1px solid var(--light-color);
+}
+
+#todo-inp:focus{
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+
+.flex, .inp-container{
+  display: flex;
+}
+
+.flex{
+  align-items: center;
+  column-gap: 10px;
+}
+
+.inp-container{
+  column-gap: 10px;
+}
+
+.todos-container{
+  padding: 10px;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  min-height: 350px;
+}
+
+.todo-item{
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 10px;
+  padding-block: 20px;
+  border: 1px solid var(--light-color);
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.todo-item i{
+  cursor: pointer;
+}
+
+#todo-add-btn{
+  background-color: var(--accent-color);
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 0.2rem ;
+  cursor: pointer;
+}
+
+input{
+  flex: 1;
+  padding: 5px;
+}
+
+.checkbox {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+
